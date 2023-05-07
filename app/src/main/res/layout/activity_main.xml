@@ -44,6 +44,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.935"
         app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/white"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -66,7 +69,10 @@
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintHorizontal_bias="0.935"
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/white"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -90,6 +96,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.935"
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/white"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
