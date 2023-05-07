@@ -75,42 +75,56 @@
         android:backgroundTint="@android:color/white"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <!--    <EditText-->
+<!--        android:id="@+id/result"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="184dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Valor por pessoa"-->
+<!--        android:inputType="number"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.935"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textColorHint="@android:color/white"-->
+<!--        android:backgroundTint="@android:color/white"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="89dp"
         android:layout_height="83dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="160dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="188dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/valor" />
 
-    <EditText
+    <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="184dp"
-        android:ems="10"
-        android:hint="Valor por pessoa"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.935"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="188dp"
+        android:text="0,00"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/white"
-        android:textColorHint="@android:color/white"
-        android:backgroundTint="@android:color/white"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textFontWeight="900"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageButton
-        android:id="@+id/share"
-        android:layout_width="76dp"
-        android:layout_height="76dp"
-        android:layout_marginBottom="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.286"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/shareother" />
+            android:id="@+id/share"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginBottom="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.286"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/shareother" />
 
     <ImageButton
         android:id="@+id/say"
@@ -119,7 +133,7 @@
         android:layout_marginBottom="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintHorizontal_bias="0.695"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/say" />
 

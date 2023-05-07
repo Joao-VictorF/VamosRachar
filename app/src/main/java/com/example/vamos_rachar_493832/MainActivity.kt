@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val qtd = findViewById<EditText>(R.id.qtd)
         val valor = findViewById<EditText>(R.id.valor)
-        val result = findViewById<EditText>(R.id.result)
+        val result = findViewById<TextView>(R.id.result)
 
         qtd.addTextChangedListener( object: TextWatcher {
             override fun afterTextChanged(s: Editable?) {
@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity() {
     private fun calculate() {
         val qtd = findViewById<EditText>(R.id.qtd)
         val valor = findViewById<EditText>(R.id.valor)
-        val result = findViewById<EditText>(R.id.result)
+        val result = findViewById<TextView>(R.id.result)
         val df = DecimalFormat("#.##")
         df.roundingMode = RoundingMode.CEILING
 
@@ -99,7 +99,7 @@ class MainActivity : AppCompatActivity() {
         val calculo = df.format((value/quantity).toBigDecimal())
         Log.d("PDM23","qtd values, $value $quantity $calculo");
 
-        result.setText(calculo.toString())
+        result.text = calculo.toString()
     }
 
 }
